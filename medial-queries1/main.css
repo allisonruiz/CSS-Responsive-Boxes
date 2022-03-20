@@ -1,3 +1,36 @@
-body {
-  background: blanchedalmond;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 300px;
+  text-align: center;
+}
+.a {
+  background-color: pink;
+  padding: 100px;
+  flex: 100%;
+}
+
+
+
+.b {
+  background-color: dodgerblue;
+  padding: 100px;
+  flex: 50%;
+}
+.c {
+  background-color: #f1f1f1;
+  padding: 100px;
+  flex: 50%;
+}
+
+
+@media (max-width: 800px) {
+  .c, .b {
+    flex: 100%;
+  }
 }
